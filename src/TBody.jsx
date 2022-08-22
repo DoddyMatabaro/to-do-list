@@ -29,3 +29,4 @@ function TBody ({toDoList, setToDoList,setEditedTask}) {
     );
     
 }
+export default TBody;
