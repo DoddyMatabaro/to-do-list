@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css'
-import Header from Header
+import Header from './Header'
+import data from './assets/data'
 function App() {
 
   const [data,setData]= useState([]);
@@ -12,8 +13,8 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <ToDoForm toDoList={toDoList} setToDoList={setToDoList} editedTask={editedTask}/>
-      
+      <ToDoForm toDoList={data} setToDoList={setData} editedTask={editedTask}/>
+      <TableTasks toDoList={data} setToDoList={setData} setEditedTask={setTask}/>
     </div>
   )
 }
