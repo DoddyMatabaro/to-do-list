@@ -3,14 +3,16 @@ import { useState } from 'react'
 
 const ToDoForm = ({toDoList,settoDoList,editTask}) => {
 	const [task, settask] = useState("")
-	const [statut, setstatus] = useState("")
+	const [status, setstatus] = useState("")
 	const submitTask = () => {
-		task = editTask === null ? settoDoList(toDoList) : editTask(task[toDoList.indexOf(task)])
-		statut= editTask === null ? settoDoList(toDoList) :  editTask(task[toDoList.indexOf(statut)])
+		editTask === null ? settoDoList([...toDoList, { task: task, status: status }]) : settoDoList((items) => {
+			
+		})
 	}
   return (
 	<div>
-		  <h4></h4>
+		  <h4>task</h4>
+		  <h4>statut</h4>
 	</div>
   )
 }
