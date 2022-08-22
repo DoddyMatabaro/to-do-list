@@ -5,7 +5,6 @@ function TableTasks({toDolist, setToDoList, setEditedTask }) {
   return (
 
 
-    
     <table>
       
       <thead>
