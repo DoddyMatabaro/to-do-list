@@ -6,8 +6,11 @@ import {FaPen, FaTrash} from 'react-icons/fa'
 function TBody ({toDoList, setToDoList,setEditedTask}) {
     
     function deleteTask(index) {
-      toDoList.splice(index, 1)
-        return setToDoList(toDoList) 
+       if(toDoList.splice(index, 1)){
+           let newTab = toDoList
+           setToDoList(newTab);
+              console.log(toDoList.length);
+       }
         
     };
 
