@@ -29,12 +29,15 @@ function TodoList(){
 
     setTodos(removedArr);
   };
+
+  return (
+    < onsubmit={addTodo}
+    <    todos={todos}
+    completeTodo={completeTodo}
+    removeTodo={removeTodo}
+    updateTodo={updateTodo}
+    />
     
-
-    
-
-
-
-
+  )
 }
 export default TodoList
