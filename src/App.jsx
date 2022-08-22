@@ -6,7 +6,8 @@ import TableTasks from './TableTasks'
 function App() {
 
   const [data,setData]= useState(datas);
-  const [editTask, setTask]=useState(null);
+  const [editTask,setTask]=useState(null);
+
 
   function editedTask(index){
     return setTask(index)
