@@ -6,7 +6,7 @@ const ToDoForm = ({toDoList,settoDoList,editTask}) => {
 	const [status, setstatus] = useState("")
 	const submitTask = () => {
 		editTask === null ? settoDoList([...toDoList, { task: task, status: status }]) : settoDoList((items) => {
-			
+			return items[editTask]
 		})
 	}
   return (
