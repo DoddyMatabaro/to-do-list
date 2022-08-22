@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import './App.css'
-import Header from Header
-import TodoList from './TableTasks'
-
+import Header from './Header'
+import datas from './assets/data'
+import Header from './Header'
+import TableTasks from './TableTasks'
 function App() {
 
-  const [data,setData]= useState([]);
+  const [data,setData]= useState(datas);
   const [editTask,setTask]=useState(null);
 
   function editedTask(index){
@@ -14,8 +15,8 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <TableTasks />
-
+      <ToDoForm toDoList={data} setToDoList={setData} editedTask={editedTask}/>
+      <TableTasks toDoList={data} setToDoList={setData} setEditedTask={setTask}/>
     </div>
   )
 }
