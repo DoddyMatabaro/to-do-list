@@ -4,8 +4,10 @@ import TBody from './TBody'
 function TableTasks({toDolist, setToDoList, setEditedTask }) {
   return (
 
+
+    
     <table>
-      <h1>To Do list</h1>
+      
       <thead>
         <tr>
           <th colSpan="2">Task</th>
