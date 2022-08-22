@@ -1,11 +1,10 @@
 import React from 'react'
 import TBody from './TBody'
 
-function TableTasks({toDolist, setToDoList, setEditedTask }) {
+function TableTasks({toDoList, setToDoList, setEditedTask }) {
   return (
 
     <table>
-      <h1>To Do list</h1>
       <thead>
         <tr>
           <th colSpan="2">Task</th>
@@ -14,7 +13,7 @@ function TableTasks({toDolist, setToDoList, setEditedTask }) {
           <th colSpan="2">#</th>
         </tr>
       </thead>
-      < TBody toDolist={toDolist} setToDoList={setToDoList} setEditedTask={setEditedTask} />
+      < TBody toDoList={toDoList} setToDoList={setToDoList} setEditedTask={setEditedTask} />
       <tfoot>
       <tr>
           <th colSpan="2">Task</th>

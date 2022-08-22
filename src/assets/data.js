@@ -1,27 +1,27 @@
 
-const data = [
+export const datas = [
     {
-        Task:"Naitoyer la cours",
-        Status:"fait",
+        task:"Naitoyer la cours",
+        status:"fait",
 
     },
     {
-        Task:"Chauffer la bouffe",
-        Status:"en cours",
+        task:"Chauffer la bouffe",
+        status:"en cours",
         
     }, 
     {
-        Task:"Coder ",
-        Status:"En cours",
+        task:"Coder ",
+        status:"En cours",
         
     },
     {
-        Task:"Prendre bain",
-        Status:"En cours",
+        task:"Prendre bain",
+        status:"En cours",
         
     },
     {
-        Task:"Rendre visite",
-        Status:"Pas fait",
+        task:"Rendre visite",
+        status:"Pas fait",
     },
 ];

@@ -11,14 +11,13 @@ function TBody ({toDoList, setToDoList,setEditedTask}) {
         
     };
 
-    let listeTaches = toDoList.map(toDo, idx => {
-        return <tr>  
+    let listeTaches = toDoList.map((toDo, idx) => {
+        return <tr key={idx.toString()}>  
             <td>{toDo.task} </td>
             <td>{toDo.status} </td>
             <td><FaPen/></td>
             <td><FaTrash onClick={()=>deleteTask(idx)}/></td>
-        </tr>;
-           
+        </tr>           
       });
 
     return(

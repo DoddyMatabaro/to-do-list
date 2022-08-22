@@ -12,8 +12,8 @@ const ToDoForm = ({ toDoList, settoDoList, editTask }) => {
   return (
 	<div>
 		  <form  onSubmit={submitTask}>
-			  <input type="text" placeholder='enter task' value={task} onChange={handlechangeInput}/> 
-			  <select name="" value={status} id="" onChange={handleChange}>
+			  <input type="text" placeholder='enter task' value={task} onChange={(e)=>settask(e.target.value)}/> 
+			  <select name="" value={status} id="" onChange={(e)=>setstatus(e.target.value)}>
 				   <option value="In progress">In progress</option>
 				   <option value="To do">To Do</option>
 				   <option value="Ended">Ended</option>
