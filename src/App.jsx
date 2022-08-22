@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import './App.css'
 import Header from './Header'
-import data from './assets/data'
+import datas from './assets/data'
+import Header from './Header'
+import TableTasks from './TableTasks'
 function App() {
 
-  const [data,setData]= useState([]);
+  const [data,setData]= useState(datas);
   const [editTask,setTask]=useState(null);
 
   function editedTask(index){
