@@ -12,6 +12,8 @@ function App() {
   return (
     <div className="App">
       <Header/>
+      <ToDoForm toDoList={toDoList} setToDoList={setToDoList} editedTask={editedTask}/>
+      
     </div>
   )
 }
