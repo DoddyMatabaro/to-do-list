@@ -18,6 +18,7 @@ const ToDoForm = ({ toDoList, settoDoList, editTask }) => {
 				   <option value="To do">To Do</option>
 				   <option value="Ended">Ended</option>
 			  </select>
+			  <input type="submit" value="ajouter" />
 		  </form>
 	</div>
   )
