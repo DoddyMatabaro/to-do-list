@@ -7,17 +7,13 @@ import ToDoForm from './ToDoForm'
 function App() {
 
   const [data,setData]= useState(datas);
-  const [editTask,setTask]=useState(null);
+  const [editTask,setEditTask]=useState(null);
 
-
-  function editedTask(index){
-    return setTask(index)
-  }
   return (
     <div className="App">
       <Header/>
-      <ToDoForm toDoList={data} setToDoList={setData} editedTask={editedTask}/>
-      <TableTasks toDoList={data} setToDoList={setData} setEditedTask={setTask}/>
+      <ToDoForm toDoList={data} setToDoList={setData} editedTask={editTask}/>
+      <TableTasks toDoList={data} setToDoList={setData} setEditedTask={setEditTask}/>
     </div>
   )
 }
