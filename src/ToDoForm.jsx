@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
-const ToDoForm = ({ toDoList, setToDoList, editedTask }) => {
+const ToDoForm = ({ toDoList, setToDoList, editedTask, setEditedTask }) => {
 	const [task, settask] = useState("")
 	const [status, setstatus] = useState("")
 	function submitTask(){
@@ -21,9 +21,9 @@ const ToDoForm = ({ toDoList, setToDoList, editedTask }) => {
         }else{
 			console.log(editedTask);
             newToDoList[editedTask].task = task;
-            newToDoList[editedTask].statut = status;
+            newToDoList[editedTask].status = status;
 			setToDoList(newToDoList);
-            setEditedTask = null;
+            setEditedTask(null);
         }
     }
   return (

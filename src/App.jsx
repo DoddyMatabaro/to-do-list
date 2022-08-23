@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <ToDoForm toDoList={data} setToDoList={setData} editedTask={editTask}/>
+      <ToDoForm toDoList={data} setToDoList={setData} editedTask={editTask} setEditedTask={setEditTask} />
       <TableTasks toDoList={data} setToDoList={setData} setEditedTask={setEditTask}/>
     </div>
   )
